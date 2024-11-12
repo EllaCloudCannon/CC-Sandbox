@@ -96,16 +96,6 @@ collections_config:
     new_preview_url:
     schemas:
     schema_key:
-collection_groups:
-  - heading: Base Pages
-    collections:
-      - pages
-  - heading: Docs
-    collections:
-      - docs
-  - heading: Site Settings
-    collections:
-      - data
 _inputs:
   title:
     type: text
