@@ -1,42 +1,50 @@
 _structures:
-  events:
-    style: modal
-    values:
-      - label: Birthday
-        value:
-          name:
-          date:
-          place:
-          image:
-          description:
-        preview:
-          text:
-            - template: "{name}s birthday event!"
-          subtext:
-            - template: "On {date} at {place}"
-          image:
-            - key: image
-        picker_preview:
-          text: Birthday
-          subtext: Add someones birthday to the events array
-          icon: cake
-      - label: Holiday
-        value:
-          date:
-          place:
-          image:
-          description:
-        preview:
-          text:
-            - template: "Holiday to {place}!"
-          subtext:
-            - template: "On {date}"
-          image:
-            - key: image
-        picker_preview:
-          text: Holiday
-          subtext: Add a holiday to the events array
-          icon: beach_access
+      events:
+        style: modal
+        values:
+          - id:
+            default:
+            tags:
+            value:
+              name:
+              date:
+              place:
+              image:
+              description:
+            groups:
+            label: Birthday
+            picker_preview:
+              text: Birthday
+              subtext: Add someones birthday to the events array
+              icon: cake
+            preview:
+              text:
+                - template: "{name}s birthday event!"
+              subtext:
+                - template: "On {date} at {place}"
+              image:
+                - key: image
+          - id:
+            default:
+            tags:
+            value:
+              date:
+              place:
+              image:
+              description:
+            groups:
+            label: Holiday
+            picker_preview:
+              text: Holiday
+              subtext: Add a holiday to the events array
+              icon: beach_access
+            preview:
+              text:
+                - template: "Holiday to {place}!"
+              subtext:
+                - template: "On {date}"
+              image:
+                - key: image
 _inputs:
   events:
     type: array
