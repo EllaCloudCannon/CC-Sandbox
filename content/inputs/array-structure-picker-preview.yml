@@ -1,21 +1,27 @@
- _structures:
-      events:
-        values:
-          - label: Birthday
-            value:
-              name: 
-              date: 
-              place:
-              image:
-              description:
-            preview:
-              text:
-                - template: {name}'s birthday event!
-              subtext:
-                - template: On {date} at {place}
-              image:
-                - key: image
-            picker_preview:
-              text: Birthday
-              subtext: Add someone's birthday to the events array
-              icon: cake
+_structures:
+  events:
+    values:
+      - label: Birthday
+        value:
+          name: 
+          date: 
+          place:
+          image:
+          description:
+        preview:
+          text:
+            - template: "{name}'s birthday event!"
+          subtext:
+            - template: "On {date} at {place}"
+          image:
+            - key: image
+        picker_preview:
+          text: "Birthday"
+          subtext: "Add someones birthday to the events array"
+          icon: cake
+_inputs:
+  events:
+    type: array
+    options:
+      structures: _structures.events
+events:
