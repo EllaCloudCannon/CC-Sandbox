@@ -11,7 +11,7 @@ _structures:
           description:
         preview:
           text:
-            - template: '{name}''s birthday event!'
+            - template: "{name}s birthday event!"
           subtext:
             - template: On {date} at {place}
           image:
