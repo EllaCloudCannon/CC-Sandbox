@@ -1,27 +1,45 @@
 _structures:
   events:
+    style: modal
     values:
       - label: Birthday
         value:
-          name: 
-          date: 
+          name:
+          date:
           place:
           image:
           description:
         preview:
           text:
-            - template: "{name}'s birthday event!"
+            - template: '{name}''s birthday event!'
           subtext:
-            - template: "On {date} at {place}"
+            - template: On {date} at {place}
           image:
             - key: image
         picker_preview:
-          text: "Birthday"
-          subtext: "Add someones birthday to the events array"
+          text: Birthday
+          subtext: Add someones birthday to the events array
           icon: cake
+      - label: Holiday
+        value:
+          date:
+          place:
+          image:
+          description:
+        preview:
+          text:
+            - template: 'Holiday to {place}!'
+          subtext:
+            - template: On {date}
+          image:
+            - key: image
+        picker_preview:
+          text: Holiday
+          subtext: Add a holiday to the events array
+          icon: beach_access
 _inputs:
   events:
     type: array
     options:
       structures: _structures.events
-events:
+events: []
