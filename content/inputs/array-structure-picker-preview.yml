@@ -13,7 +13,7 @@ _structures:
           text:
             - template: "{name}s birthday event!"
           subtext:
-            - template: On {date} at {place}
+            - template: "On {date} at {place}"
           image:
             - key: image
         picker_preview:
@@ -28,9 +28,9 @@ _structures:
           description:
         preview:
           text:
-            - template: Holiday to {place}!
+            - template: "Holiday to {place}!"
           subtext:
-            - template: On {date}
+            - template: "On {date}"
           image:
             - key: image
         picker_preview:
