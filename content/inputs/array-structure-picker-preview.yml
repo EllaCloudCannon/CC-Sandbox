@@ -28,7 +28,7 @@ _structures:
           description:
         preview:
           text:
-            - template: 'Holiday to {place}!'
+            - template: Holiday to {place}!
           subtext:
             - template: On {date}
           image:
@@ -42,4 +42,13 @@ _inputs:
     type: array
     options:
       structures: _structures.events
-events: []
+events:
+  - name: Heather
+    date: 2024-11-12T00:00:00Z
+    place: My house
+    image: /team/heather.jpg
+    description: Come have fun!
+  - date: 2024-11-12T00:00:00Z
+    place: Fiji
+    image: /uploads/fiji.webp
+    description: Beach time!
