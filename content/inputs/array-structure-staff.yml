@@ -7,9 +7,10 @@ _inputs:
     type: textarea
 _structures:
   staff:
-    style: modal
+    style: select
     values:
-      - value:
+      - default: true
+        value:
           _type: Employee
           name:
           job_description:
@@ -23,6 +24,11 @@ _structures:
             - Description of position
           image:
             - key: profile_picture
+          icon: support_agent
+        picker_preview:
+          text:
+            - key: name
+            - Employee
           icon: support_agent
       - value:
           _type: Manager
