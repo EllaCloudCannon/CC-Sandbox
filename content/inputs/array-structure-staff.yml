@@ -51,11 +51,11 @@ _structures:
           icon: face
 staff:
   - _type: Employee
-    name:
-    job_description:
-    profile_picture:
+    name: Holly James
+    job_description: Marketing Lead
+    profile_picture: /team/holly-james.jpg
   - _type: Manager
-    name:
-    job_description:
-    profile_picture:
+    name: Karen Key
+    job_description: Project Manager
+    profile_picture: /team/karen-key.jpg
     url:
