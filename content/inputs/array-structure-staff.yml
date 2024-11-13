@@ -1,0 +1,52 @@
+_inputs:
+  staff:
+    type: array
+  profile_picture:
+    type: image
+  job_description:
+    type: textarea
+_structures:
+  staff:
+    style: modal
+    values:
+      - value:
+          _type: Employee
+          name:
+          job_description:
+          profile_picture:
+        preview:
+          text:
+            - key: name
+            - Employee
+          subtext:
+            - key: job_description
+            - Description of position
+          image:
+            - key: profile_picture
+          icon: support_agent
+      - value:
+          _type: Manager
+          name:
+          job_description:
+          profile_picture:
+          url:
+        preview:
+          text:
+            - key: name
+            - Manager
+          subtext:
+            - key: job_description
+            - Description of position
+          image:
+            - key: profile_picture
+          icon: face
+staff:
+  - _type: Employee
+    name:
+    job_description:
+    profile_picture:
+  - _type: Manager
+    name:
+    job_description:
+    profile_picture:
+    url:
