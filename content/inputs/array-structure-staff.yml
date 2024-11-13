@@ -26,9 +26,7 @@ _structures:
             - key: profile_picture
           icon: support_agent
         picker_preview:
-          text:
-            - key: name
-            - Employee
+          text: Employee
           icon: support_agent
       - value:
           _type: Manager
@@ -46,13 +44,7 @@ _structures:
           image:
             - key: profile_picture
           icon: face
-staff:
-  - _type: Employee
-    name:
-    job_description:
-    profile_picture:
-  - _type: Manager
-    name:
-    job_description:
-    profile_picture:
-    url:
+        picker_preview:
+          text: Manager
+          icon: face
+staff: []
